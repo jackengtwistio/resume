@@ -1,0 +1,57 @@
+---
+name: Shuo Yang(jack)
+phone: +1 3474992944
+aboutme: https://jack-kfk2t.ondigitalocean.app/
+email: "jtwist108@gmail.com"
+github: jackengtwistio
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::moderncv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+# Website Develop Skills
+
+ * React.js
+ * Node.js
+ * Python
+ * MongoDB
+ 
+# Some stuff about me
+
+ * easygoing,thoughtful,humble,cooperative,hardworking are some of the characteristics I've been always teaching myself.
+ * I want to live in NYC with stable income and meaningful job.
+ * healthy diet,excercise,meditation are some of the most important things for me. 
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "bachelor(Business Administration)", "2022", "Wuhan University", "Wuhan, China"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Working Experience
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  2018, "office assistant", "run errands between offices, organize data using office toolset",
+  2019, "team member", "recommend bicycle to tourists, prepare and take back bicycle"
+) %>% 
+  brief_entries(
+    glue::glue("worked as {Type}"),
+    Year, 
+    Desc
+  )
+```
+
+
+
+
+
