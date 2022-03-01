@@ -4,6 +4,7 @@ phone: +1 3474992944
 aboutme: https://jack-kfk2t.ondigitalocean.app/
 email: "jtwist108@gmail.com"
 github: jackengtwistio
+address: New York
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::moderncv
 ---
@@ -22,6 +23,7 @@ library(vitae)
 # Some stuff about me
 
  * easygoing,thoughtful,humble,cooperative,hardworking are some of the characteristics I've been always teaching myself.
+ * can easily be a workaholic with a job I like
  * I want to live in NYC with stable income and meaningful job.
  * healthy diet,excercise,meditation are some of the most important things for me. 
 
@@ -41,8 +43,8 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Type, ~Desc,
-  2018, "office assistant", "run errands between offices, organize data using office toolset",
-  2019, "team member", "recommend bicycle to tourists, prepare and take back bicycle"
+  2018, "office assistant", "Run errands between offices, Organize data using office toolset",
+  2019, "team member", "Recommend bicycle to tourists, Prepare and take back bicycle"
 ) %>% 
   brief_entries(
     glue::glue("worked as {Type}"),
